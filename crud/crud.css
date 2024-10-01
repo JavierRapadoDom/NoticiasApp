@@ -1,0 +1,20 @@
+.container {
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.nav-item{
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.nav-item:hover {  
+    font-size: small;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    text-decoration: underline;
+
+}
