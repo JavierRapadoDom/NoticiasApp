@@ -21,3 +21,13 @@
 
 
 }
+footer {
+    background-color: #2D2D2D;
+    color: white;
+    text-align: center;
+    padding: 55px 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+  }
