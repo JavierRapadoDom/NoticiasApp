@@ -18,14 +18,17 @@ class FooterCustom extends HTMLElement{
                     const style = document.createElement('style');
                     style.textContent = `
                         footer {
-                            background-color: #2D2D2D;
-                            color: white;
+                            background-color: #f8f9fa;
+                            padding: 20px;
                             text-align: center;
-                            padding: 55px 15px;
-                            position: relative;
-                            width: 100%;
-                            bottom: 0;
-                            margin-top: 20px;
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            color: #333;
+                             border-top: 1px solid #ddd;    
+                        }
+                        .footer-container {
+                                max-width: 800px;
+                                margin: 0 auto;
                         }
                     `;
                     this.shadowRoot.appendChild(style);
