@@ -9,15 +9,48 @@
     color: #6c757d;
     opacity: 0.65;
 }
-.nav-item:hover {  
-    font-size: small;
-    transition: cubic-bezier(0.19, 1, 0.22, 1);
-    text-decoration: underline;
+
+
+
+.navbar-nav .nav-link {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f94ca4;
+}
+
+.containerMenu a {
+    font-family: "Rajdhani", sans-serif;
 
 }
-.nav-item{
-    font-weight: bold;
-    font-family: "Space Grotesk", sans-serif;
 
-
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.imgNoticia img{
+    max-height: 201px;
+    max-width: 414px;
+}
+
+
+#searchForm {
+    display: inline-block !important;  /* Asegura que sea visible */
+    width: 0 !important;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+  }
+  
+  #searchForm.active {
+    width: 200px !important; /* Asegura que se vea el campo */
+    opacity: 1 !important;
+  }
+  
+  #searchInput {
+    width: 100% !important;
+  }
+  

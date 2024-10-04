@@ -1,42 +1,60 @@
 body {
-   background-image: url(../img/papelPeriodico.jpg);
-    /* filter: opacity(0.5); */
-
+  background-image: url(../img/papelPeriodico.jpg);
 }
 
-.container {
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-}
-
-
-.nav-item:hover {  
-    font-size: small;
-    transition: cubic-bezier(0.19, 1, 0.22, 1);
-    text-decoration: underline;
-
-}
-.nav-item{
-    font-weight: bold;
-    font-family: "Space Grotesk", sans-serif;
-
-
-}
 footer {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #333;
-    border-top: 1px solid #ddd;
-  }
-  
+  background-color: #2c3e50;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #ddd;
+  border-top: 1px solid #ddd;
+}
 .footer-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f94ca4;
+}
+
+.containerMenu a {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchForm {
+  display: inline-block !important;  /* Asegura que sea visible */
+  width: 0 !important;
+  opacity: 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+#searchForm.active {
+  width: 200px !important; /* Asegura que se vea el campo */
+  opacity: 1 !important;
+}
+
+#searchInput {
+  width: 100% !important;
+}
