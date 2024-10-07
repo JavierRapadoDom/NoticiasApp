@@ -37,8 +37,7 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
 
-  <script src=".../js/bootstrap.min.js"></script>
-  <script src="../js/main.js"></script>
+
 
 </head>
 
@@ -101,24 +100,24 @@
 
   <!-- END OF NAVBAR-->
   <div class="container col-md-6 bg-light">
-    <form>
+    <form method="post" id="formulario">
       <div class="mb-3 py-3">
-        <label for="formID" class="form-label">ID de la noticia</label>
-        <input type="text" class="form-control" id="formID" required />
+        <label for="id-noticia" class="form-label">ID de la noticia</label>
+        <input type="text" class="form-control" id="id-noticia" required />
       </div>
 
       <div class="mb-3 py-3">
-        <label for="exampleFormControlInput1" class="form-label">Titular de la noticia</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" required />
+        <label for="titular-noticia" class="form-label">Titular de la noticia</label>
+        <input type="text" class="form-control" id="titular-noticia" required />
       </div>
 
       <div class="mb-3 py-3">
-        <label for="exampleFormControlInput1" class="form-label">Autor de la noticia</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" required />
+        <label for="autor-noticia" class="form-label">Autor de la noticia</label>
+        <input type="text" class="form-control" id="autor-noticia" required />
       </div>
       <div class="mb-3 py-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Contenido</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        <label for="contenido-noticia" class="form-label">Contenido</label>
+        <textarea class="form-control" id="contenido-noticia" rows="3" required></textarea>
       </div>
 
 
@@ -130,8 +129,8 @@
       
 
       <div class="mb-3">
-        <label for="formFile" class="form-label">Portada de la noticia</label>
-        <input class="form-control" type="file" id="formFile" required>
+        <label for="portada-noticia" class="form-label">Portada de la noticia</label>
+        <input class="form-control" type="file" id="portada-noticia">
       </div>
 
       
@@ -154,6 +153,7 @@
       </div>
     </div>
   </footer>
+  <script src="../js/agregarNoticia.js"></script>
 </body>
 
 </html>

@@ -54,3 +54,69 @@
     width: 100% !important;
   }
   
+
+  .carousel-inner {
+    min-height: 250px;
+}
+
+.carousel-item {
+    text-align: center; /* Centrar el contenido */
+    width: 100%;
+}
+
+
+.scoreboard {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 600px; /* Limitar el ancho */
+    width: 100%;
+    display: block; /* Asegura que el marcador ocupe toda la fila */
+    margin-top: 20px;
+}
+
+
+.match {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.match .teams {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2em;
+}
+
+.match .teams div:first-child {
+    font-weight: bold;
+    color: #007bff; /* Equipo ganador */
+}
+
+.match .teams div:last-child {
+    font-weight: bold;
+    color: #dc3545; /* Equipo perdedor */
+}
+
+.match .status {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #28a745;
+    font-family: 'Roboto', sans-serif;
+}
+
+.match .status i {
+    margin-right: 5px;
+}
+
+.match hr {
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}

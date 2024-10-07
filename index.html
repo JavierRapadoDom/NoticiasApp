@@ -69,7 +69,7 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- Collapsible content -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -90,87 +90,179 @@
             </li>
           </ul>
         </div>
-    
+
         <!-- Search form and icon -->
         <div class="d-flex align-items-center">
           <!-- Input field, hidden initially -->
           <form id="searchForm" class="d-none">
             <input type="text" class="form-control" placeholder="Buscar..." id="searchInput">
           </form>
-    
+
           <!-- Search icon -->
           <i class="fas fa-search fs-4 ms-3" id="searchIcon" style="cursor: pointer;"></i>
         </div>
       </div>
     </nav>
-    
-    
-    
-
-  <!-- END OF NAVBAR-->
 
 
-  <div class="container mb-4" id="noticia-titular">
-    <div class="card mb-12">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <img src="img/titularHansi.png" class="img-fluid rounded-start" alt="Titular">
+
+
+    <!-- END OF NAVBAR-->
+
+    <!-- MARCADORES-->
+    <div id="carouselPartidos" class="carousel slide bg-light my-7" data-bs-ride="carousel" data-bs-interval="7000">
+      <div class="carousel-inner">
+        <!-- Primer resultado -->
+        <div class="carousel-item active">
+          <div class="scoreboard">
+            <div class="match">
+              <div class="teams">
+                <div>FC Barcelona</div>
+                <div>3</div>
+              </div>
+              <div class="teams">
+                <div>Real Madrid</div>
+                <div>3</div>
+              </div>
+              <hr>
+              <div class="status">
+                <i class="fas fa-check-circle"></i> FINALIZADO
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 border">
-          <div class="card-body">
-            <h5 class="card-title">El Barça fichará un recambio para Ter Stegen
-            </h5>
-            <p class="card-text">El Barcelona acudirá al mercado para fichar a un recambio para Ter Stegen que se
-              lesionó este domingo en el partido que el equipo azulgrana disputó en Villarreal. </p>
-            <p class="card-text"><small class="text-muted">(27/09/24)(Javier Rapado Domínguez)</small></p>
+
+        <!-- Segundo resultado -->
+        <div class="carousel-item">
+          <div class="scoreboard">
+            <div class="match">
+              <div class="teams">
+                <div>Betis</div>
+                <div>0</div>
+              </div>
+              <div class="teams">
+                <div>Sevilla</div>
+                <div>1</div>
+              </div>
+              <hr>
+              <div class="status">
+                <i class="fas fa-check-circle"></i> FINALIZADO
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tercer resultado -->
+        <div class="carousel-item">
+          <div class="scoreboard">
+            <div class="match">
+              <div class="teams">
+                <div>Levante UD</div>
+                <div>3</div>
+              </div>
+              <div class="teams">
+                <div>Valencia</div>
+                <div>2</div>
+              </div>
+              <hr>
+              <div class="status">
+                <i class="fas fa-check-circle"></i> FINALIZADO
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuarto resultado -->
+        <div class="carousel-item">
+          <div class="scoreboard">
+            <div class="match">
+              <div class="teams">
+                <div>Salamanca UDS</div>
+                <div>5</div>
+              </div>
+              <div class="teams">
+                <div>Unionistas de Salamanca</div>
+                <div>0</div>
+              </div>
+              <hr>
+              <div class="status">
+                <i class="fas fa-check-circle"></i> FINALIZADO
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container my-4" id="noticias-secundarias">
-    <div class="card-group">
-      <div class="card col-sm-12 col-md-4 me-3 border imgNoticia">
-        <img src="img/nico.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">El Athletic publica las sanciones que impondrá a los hinchas por su conducta violenta y
-            xenófoba</h5>
-          <p class="card-text">El club anuncia que reclamará a los autores las multas económicas que puedan derivarse de
-            sus comportamientos y les prohibirá la entrada a San Mamés.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">(02/10/2024)</small>
-          <small class="text-muted text-end">(Yeray García Frutos)</small>
-        </div>
-      </div>
-      <div class="card col-sm-12 col-md-4 me-3 border imgNoticia">
-        <img src="img/siesni.jpeg" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">Así son las primeras horas de Szczesny en el Barça</h5>
-          <p class="card-text">El portero, tras pasar reconocimiento médico ayer de forma satisfactoria, se ha instalado
-            a Castelldefels y esta noche estará en Montjuïc.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">(FECHA)</small>
-          <small class="text-muted text-end">(AUTOR)</small>
-        </div>
-      </div>
-      <div class="card col-sm-12 col-md-4 me-3 border imgNoticia">
-        <img src="img/dortmund.jpeg" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">La Champions más loca: ya van 11 goleadas y 3,30 dianas por partido</h5>
-          <p class="card-text">El nuevo formato de clasificación unificada provoca que los equipos busquen con más
-            insistencia la portería rival.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">(FECHA)</small>
-          <small class="text-muted text-end">(AUTOR)</small>
+    <!-- FIN MARCADORES-->
+
+
+
+
+    <div class="container mb-4" id="noticia-titular">
+      <div class="card mb-12">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <img src="img/titularHansi.png" class="img-fluid rounded-start" alt="Titular">
+          </div>
+          <div class="col-md-4 border">
+            <div class="card-body">
+              <h5 class="card-title">El Barça fichará un recambio para Ter Stegen
+              </h5>
+              <p class="card-text">El Barcelona acudirá al mercado para fichar a un recambio para Ter Stegen que se
+                lesionó este domingo en el partido que el equipo azulgrana disputó en Villarreal. </p>
+              <p class="card-text"><small class="text-muted">(27/09/24)(Javier Rapado Domínguez)</small></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <mi-footer></mi-footer>
+
+    <div class="container my-4" id="noticias-secundarias">
+      <div class="card-group">
+        <div class="card col-sm-12 col-md-4 me-3 border imgNoticia">
+          <img src="img/nico.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">El Athletic publica las sanciones que impondrá a los hinchas por su conducta violenta
+              y
+              xenófoba</h5>
+            <p class="card-text">El club anuncia que reclamará a los autores las multas económicas que puedan derivarse
+              de
+              sus comportamientos y les prohibirá la entrada a San Mamés.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">(02/10/2024)</small>
+            <small class="text-muted text-end">(Yeray García Frutos)</small>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4 me-3 border imgNoticia">
+          <img src="img/siesni.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Así son las primeras horas de Szczesny en el Barça</h5>
+            <p class="card-text">El portero, tras pasar reconocimiento médico ayer de forma satisfactoria, se ha
+              instalado
+              a Castelldefels y esta noche estará en Montjuïc.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">(FECHA)</small>
+            <small class="text-muted text-end">(AUTOR)</small>
+          </div>
+        </div>
+        <div class="card col-sm-12 col-md-4 me-3 border imgNoticia">
+          <img src="img/dortmund.jpeg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">La Champions más loca: ya van 11 goleadas y 3,30 dianas por partido</h5>
+            <p class="card-text">El nuevo formato de clasificación unificada provoca que los equipos busquen con más
+              insistencia la portería rival.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">(FECHA)</small>
+            <small class="text-muted text-end">(AUTOR)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <mi-footer></mi-footer>
 </body>
 
 </html>
