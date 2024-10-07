@@ -1,6 +1,6 @@
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault(); // Evitar el envío del formulario
-  // Datos que queremos enviar en la peticiÃ³n POST
+  // Datos que queremos enviar en la petición POST
     const data = {
         id: document.getElementById('id-noticia').value ,
         titular: document.getElementById('titular-noticia').value ,
@@ -8,9 +8,9 @@ document.getElementById('formulario').addEventListener('submit', function(event)
         contenido: document.getElementById('contenido-noticia').value
     };
 
-// Realizamos la peticiÃ³n AJAX usando fetch
+// Realizamos la petición AJAX usando fetch
 fetch('http://localhost:8080/createNoticia', {
-    method: 'POST', // Especificamos el mÃ©todo de la peticiÃ³n
+    method: 'POST', // Especificamos el método de la peticiÃ³n
     headers: {
       'Content-Type': 'application/json' // Indicamos que los datos estÃ¡n en formato JSON
     },
@@ -23,7 +23,7 @@ fetch('http://localhost:8080/createNoticia', {
       return response.json(); // Convertimos la respuesta en formato JSON
     })
     .then(data => {
-      console.log('Respuesta del servidor:', data); // AquÃ­ procesamos la respuesta del servidor
+      console.log('Respuesta del servidor:', data); // Aqui­ procesamos la respuesta del servidor
     })
     .catch(error => {
       console.error('Error durante la peticion:', error); // Manejo de errores

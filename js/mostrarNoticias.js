@@ -18,7 +18,7 @@ function cargarNoticias() {
                       <td>${noticia.autor}</td>
                       <td>
                         <button type="button" class="btn btn-secondary">Modificar</button>
-                        <button type="button" class="btn btn-danger" id="eliminar-${noticia.id}">Eliminar</button>
+                        <input type="button" class="btn btn-danger" onclick="eliminarNoticia('${noticia.id}')" id="${noticia.id}" value="Eliminar"></input>
                       </td>
                   `;
           tablaNoticias.appendChild(fila);
