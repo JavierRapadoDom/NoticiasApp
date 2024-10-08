@@ -1,10 +1,12 @@
 
 
-
+setTimeout(()=>{
+  Location.reload();
+  }, 2000);
 
 function eliminarNoticia(id_a_eliminar) {
 
-    var endpoint_eliminar_noticia = "http://localhost:8080/eliminarNoticia?id=";                     /* http://localhost:8080/eliminarNoticia?id= */
+    var endpoint_eliminar_noticia = "http://localhost:8080/deleteNoticia?id=";                     /* http://localhost:8080/eliminarNoticia?id= */
 
     endpoint_eliminar_noticia += id_a_eliminar; 
 
@@ -25,8 +27,12 @@ function eliminarNoticia(id_a_eliminar) {
         })
         .catch(error => {
           console.error('Error durante la peticion:', error); // Manejo de errores
-        });
+        })
+        .then(location.reload());
+        /*location.reload();*/
     }
+
+
 
 
 

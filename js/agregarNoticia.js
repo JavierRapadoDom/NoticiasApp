@@ -28,4 +28,5 @@ fetch('http://localhost:8080/createNoticia', {
     .catch(error => {
       console.error('Error durante la peticion:', error); // Manejo de errores
     });
+    location.reload();
 });

@@ -12,6 +12,8 @@ function cargarNoticias() {
   
         noticias.forEach((noticia) => {
           const fila = document.createElement("tr");
+          /*const dato1 = document.createElement("td");*/
+          
           fila.innerHTML = `
                       <td>${noticia.id}</td>
                       <td>${noticia.titular}</td>
@@ -21,7 +23,7 @@ function cargarNoticias() {
                         <input type="button" class="btn btn-danger" onclick="eliminarNoticia('${noticia.id}')" id="${noticia.id}" value="Eliminar"></input>
                       </td>
                   `;
-          tablaNoticias.appendChild(fila);
+          tablaNoticias.appendChild(fila); 
         });
       })
       .catch((error) => {
